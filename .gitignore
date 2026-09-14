@@ -1,0 +1,29 @@
+# Node
+frontend/node_modules/
+frontend/dist/
+
+# Environment files
+frontend/.env
+frontend/.env.local
+frontend/.env.production
+
+# Java / Maven
+backend/target/
+target/
+
+# IDE
+.idea/
+*.iml
+.classpath
+.project
+.settings/
+
+# Logs
+*.log
+
+# Uploaded files
+backend/uploads/
+
+# OS
+.DS_Store
+Thumbs.db

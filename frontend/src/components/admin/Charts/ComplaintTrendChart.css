@@ -1,0 +1,30 @@
+.complaint-trend-chart {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+  border: 1px solid #e2e8f0;
+}
+
+.complaint-trend-chart h3 {
+  margin: 0 0 1.5rem 0;
+  color: #1f2937;
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+
+.chart-loading,
+.chart-empty,
+.chart-error {
+  padding: 2rem;
+  text-align: center;
+  color: #64748b;
+  background: white;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+}
+
+.chart-error {
+  color: #991b1b;
+  background-color: #fee2e2;
+}

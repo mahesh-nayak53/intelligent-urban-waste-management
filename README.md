@@ -1,76 +1,88 @@
 # Intelligent Urban Waste Management System
 
-A full-stack web application for improving urban waste management through digital complaint reporting, complaint tracking, staff assignment, waste collection coordination, notifications, and administrative monitoring.
+A full-stack web application designed to modernize urban waste management through digital complaint reporting, complaint tracking, staff assignment, waste collection coordination, notifications, and administrative monitoring.
 
-The application provides separate functionality for citizens, staff, and administrators with secure authentication and role-based access control.
+The system provides separate dashboards and role-based functionality for **Citizens, Staff, and Administrators**, enabling efficient communication and centralized waste-management operations.
 
 ---
 
 ## Live Application
 
 ### Frontend
-
 https://frontend-rdwsbz7rs-mahesh-nayak53s-projects.vercel.app
 
 ### Backend
-
 https://intelligent-urban-waste-backend.onrender.com
 
 ### Backend Health Check
-
 https://intelligent-urban-waste-backend.onrender.com/health
 
----
-
-## GitHub Repository
-
+### GitHub Repository
 https://github.com/mahesh-nayak53/intelligent-urban-waste-management
 
 ---
 
-## Project Overview
+## Project Status
 
-The Intelligent Urban Waste Management System is designed to provide a centralized platform for managing waste-related complaints and collection activities.
+**Status:** Deployed and Working
 
-Citizens can report waste-related issues, track their complaints, and receive notifications.
-
-Staff members can view assigned complaints, update complaint statuses, and manage collection-related tasks.
-
-Administrators can manage users, staff, complaints, assignments, notifications, and system-level statistics through an administrative dashboard.
+- Frontend deployed on Vercel
+- Backend deployed on Render
+- Database hosted on TiDB Cloud
+- REST API integrated with frontend
+- JWT authentication implemented
+- Role-based access control implemented
+- MySQL-compatible database integration completed
 
 ---
 
-## Objectives
+# Overview
+
+The **Intelligent Urban Waste Management System** provides a centralized digital platform for managing waste-related complaints and collection activities.
+
+Citizens can report waste-related problems, upload supporting images, track complaint progress, and receive notifications.
+
+Staff members can view complaints assigned to them, update complaint statuses, and manage waste collection activities.
+
+Administrators can manage users, staff, complaints, assignments, notifications, and system statistics through an administrative dashboard.
+
+The goal of the system is to reduce manual processes and improve transparency, communication, and efficiency in urban waste management.
+
+---
+
+# Objectives
 
 The main objectives of this project are:
 
 - Digitize urban waste complaint management
 - Allow citizens to report waste-related problems
-- Provide real-time complaint status tracking
+- Provide complaint status tracking
 - Enable administrators to assign complaints to staff
 - Help staff manage assigned complaints
 - Improve communication through notifications
-- Provide dashboards and statistics for monitoring
-- Reduce manual waste management processes
-- Provide a centralized waste management platform
+- Provide dashboards and analytical statistics
+- Reduce manual waste-management processes
+- Centralize waste-related information
+- Improve coordination between citizens, staff, and administrators
 
 ---
 
 # Features
 
-## Authentication
+## Authentication and Authorization
 
 - User registration
-- User login
+- Secure user login
 - JWT-based authentication
-- Secure password hashing
+- Password hashing
 - Logout functionality
-- Role-based authentication
+- Role-based access control
 - Protected routes
+- Secure REST API endpoints
 
 ---
 
-## Citizen Features
+# Citizen Features
 
 Citizens can:
 
@@ -82,12 +94,12 @@ Citizens can:
 - Track complaint status
 - View complaint history
 - Receive notifications
-- View activity information
+- View recent activities
 - Monitor complaint progress
 
 ---
 
-## Staff Features
+# Staff Features
 
 Staff members can:
 
@@ -102,20 +114,20 @@ Staff members can:
 
 ---
 
-## Admin Features
+# Admin Features
 
 Administrators can:
 
-- Access admin dashboard
+- Access administrative dashboard
 - Manage users
 - Manage staff members
-- View complaints
+- View all complaints
 - View complaint details
 - Assign complaints to staff
 - Update complaint status
 - Manage waste collection activities
 - View notifications
-- Monitor system activity
+- Monitor system activities
 - View dashboard statistics
 - Analyze complaint trends
 - Monitor complaint priorities
@@ -123,29 +135,29 @@ Administrators can:
 
 ---
 
-# Dashboard Features
+# Dashboard and Analytics
 
-The application includes different dashboard components for monitoring the waste management system.
+The system provides dashboards for monitoring waste-management activities.
 
 ### Complaint Status
 
-Displays the distribution of complaints based on their current status.
+Displays complaints according to their current status.
 
 ### Complaint Trends
 
-Provides a visual representation of complaint trends over time.
+Provides visual insights into complaint activity over time.
 
 ### Priority Distribution
 
-Displays complaints based on priority levels.
+Displays complaints according to priority levels.
 
 ### Zone Statistics
 
-Provides statistics based on different geographical zones.
+Provides complaint statistics based on geographical zones.
 
 ### Activity Feed
 
-Displays recent system activities.
+Displays recent activities performed within the system.
 
 ### Notifications
 
@@ -157,73 +169,50 @@ Allows users and staff to view and manage system notifications.
 
 ## Frontend
 
-- React
-- Vite
-- JavaScript
-- Tailwind CSS
-- React Router
-- Axios
-- Recharts
-
-## Backend
-
-- Java
-- Spring Boot
-- Spring Data JPA
-- Hibernate
-- Spring Security
-- JWT
-- Maven
-
-## Database
-
-- MySQL-compatible TiDB Cloud
-- Hibernate ORM
-- JPA
-
-## Deployment
-
-- Vercel - Frontend
-- Render - Backend
-- TiDB Cloud - Database
-
-## Version Control
-
-- Git
-- GitHub
+| Technology | Purpose |
+|---|---|
+| React.js | User interface development |
+| Vite | Frontend development and build tool |
+| JavaScript | Application logic |
+| Tailwind CSS | Responsive UI styling |
+| React Router | Client-side routing |
+| Axios | REST API communication |
+| Recharts | Dashboard charts and analytics |
 
 ---
 
-# Architecture
+## Backend
+
+| Technology | Purpose |
+|---|---|
+| Java | Backend programming |
+| Spring Boot | Backend framework |
+| Spring Web | REST API development |
+| Spring Data JPA | Database access |
+| Hibernate ORM | Object-relational mapping |
+| Spring Security | Authentication and authorization |
+| JWT | Token-based authentication |
+| Maven | Dependency and build management |
+
+---
+
+## Database
+
+| Technology | Purpose |
+|---|---|
+| TiDB Cloud | Cloud database |
+| MySQL-compatible SQL | Database platform |
+| JPA | Persistence API |
+| Hibernate | ORM |
+| MySQL Connector/J | JDBC database driver |
+
+### Database Architecture
 
 ```text
-                    ┌─────────────────────────────┐
-                    │       User / Browser        │
-                    └──────────────┬──────────────┘
-                                   │
-                                   ▼
-                    ┌─────────────────────────────┐
-                    │      React Frontend         │
-                    │       Vite + Tailwind       │
-                    │          Vercel             │
-                    └──────────────┬──────────────┘
-                                   │
-                              REST API
-                                   │
-                                   ▼
-                    ┌─────────────────────────────┐
-                    │     Spring Boot Backend     │
-                    │       Spring Security       │
-                    │          JWT                │
-                    │           JPA               │
-                    │          Render             │
-                    └──────────────┬──────────────┘
-                                   │
-                                  JDBC
-                                   │
-                                   ▼
-                    ┌─────────────────────────────┐
-                    │        TiDB Cloud           │
-                    │     MySQL Compatible        │
-                    │        Database              │
-                    └─────────────────────────────┘
+Spring Data JPA
+       ↓
+Hibernate ORM
+       ↓
+MySQL Connector/J
+       ↓
+TiDB Cloud

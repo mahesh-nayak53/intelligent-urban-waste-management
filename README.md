@@ -221,5 +221,33 @@ TiDB Cloud
 
 ### Screenshots
 
-### Login Page
+## Login Page
 <img width="900" alt="Login Page" src="screenshots/Home_page.png" />
+
+## Admin DashBoard
+<img width="900" alt="Login Page" src="screenshots/AdminDashboard.png" />
+
+## Complaints
+<img width="900" alt="Login Page" src="screenshots/Complaints.png" />
+
+## Task Management
+<img width="900" alt="Login Page" src="screenshots/TaskManagment.png" />
+
+## Citizen
+<img width="900" alt="Login Page" src="screenshots/cititzen.png" />
+
+## Staff Management
+<img width="900" alt="Login Page" src="screenshots/stafManagment.png" />
+
+## Staff Dashboard
+<img width="900" alt="Login Page" src="screenshots/stafdashboard.png" />
+
+
+
+### Author
+Mahesh 
+## Full-Stack Java Developer | React Developer
+
+## GitHub:
+
+https://github.com/mahesh-nayak53
